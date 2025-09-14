@@ -4,6 +4,9 @@ pragma solidity ^0.8.0;
 contract IntegerRomanConverter {
 
     mapping(bytes1 => uint) public romanMap;
+    mapping(uint => string) public romanMap2;
+    uint[] public numbers = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    string[] public roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
 
     constructor() {
         romanMap['I'] = 1;
@@ -15,8 +18,16 @@ contract IntegerRomanConverter {
         romanMap['M'] = 1000;
     }
 
-    function integerToRoman(uint n) public pure returns (string memory) {
-        
+    function integerToRoman(uint n) public view returns (string memory) {
+        uint temp = n;
+        while (temp > 0) {
+            for (uint i = 0; i < numbers.length; i++) {
+                if (temp >= numbers[i]) {
+                    temp -= numbers[i];
+                    return string(abi.encodePacked(roman[i], integerToRoman(temp)));
+                }
+            }
+        }
     }
 
     function romanToInteger(string memory n) public view returns (uint) {

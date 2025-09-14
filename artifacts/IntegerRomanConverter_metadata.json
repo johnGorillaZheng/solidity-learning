@@ -26,7 +26,45 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "numbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "roman",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -43,6 +81,25 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "romanMap2",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -96,11 +153,11 @@
 	},
 	"sources": {
 		"task1/IntegerRomanConvert.sol": {
-			"keccak256": "0x6e1b39c2f981598ab814da6e917b2d90be37a06600ec82b3174834b249be9a77",
+			"keccak256": "0xdb3706dc8a30a46e1f5c9f18610b817e0e869cd0e0e98a4f4c0ac15388dbfa23",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1a08111370448ab1b1c8580eca160835383758effd503104239721150dc79f2d",
-				"dweb:/ipfs/QmcvyJpAmgfyNeN8uCW7zPYfaJqz8eURDnPxCZ2ZwSFShz"
+				"bzz-raw://a9a43579362bba7c03a69180ae4a48f68f91f55c4d86434c7013192a9ffc80b2",
+				"dweb:/ipfs/QmZjJo9fqScncVi3rxG9b4AbFqxZ74JE7Vy4Zsc1nSSjfD"
 			]
 		}
 	},
