@@ -1,0 +1,126 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Donate",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "donate",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "getDonation",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTop3",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "top1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "top2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "top3",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"task2/Begging/BeggingContract.sol": "BeggingContract"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"task2/Begging/BeggingContract.sol": {
+			"keccak256": "0xaa5d623864b7565825354dbcfb7266c98c29576586ba1dcc6b4d4a331aa41d40",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://74ec8f156420a0c533a5d7bec105e7cda447fb4da84438bbb22f11a8a498bab2",
+				"dweb:/ipfs/QmWTyAp8ABPHBAPmJhptumEbzXV3ghaVXL8xb3afLRVHZu"
+			]
+		}
+	},
+	"version": 1
+}
